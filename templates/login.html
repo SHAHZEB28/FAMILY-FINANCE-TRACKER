@@ -6,9 +6,19 @@
 </head>
 <body>
 
-    <div class="header">
+    <div class="header" style="display: flex; align-items: center; justify-content: center;">
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <img class="logo" 
+                 src="{{ url_for('static', filename='images/logo.png') }}" 
+                 alt="Logo" 
+                 style="height: 45px; width: 45px;" />
+            <span style="color: #e74c3c; font-size: 12px; font-weight: bold; margin-top: 4px; text-shadow: 1px 1px 2px #000;">
+              Track. Manage. Unify.
+            </span>
+          </div>
         <h1>Unified Family Finance Tracker</h1>
-    </div>
+      </div>
+      
 
     <div class="background-container">
         <img src="https://images.unsplash.com/photo-1579621970590-9d624316904b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGNvaW5zfGVufDB8fDB8fHww&w=2000&q=100&auto=format" 

@@ -7,9 +7,24 @@
     {% block styles %}{% endblock %}
 </head>
 <body>
-
     <header>
-        <h1 class="small-header">FAMILY FINANCE TRACKER</h1>
+        <div class="header-content" style="display: flex; align-items: center;">
+            <!-- Logo and tagline container -->
+            <div style="display: flex; flex-direction: column; align-items: center;">
+              <img class="logo" 
+                   src="{{ url_for('static', filename='images/logo.png') }}" 
+                   alt="Logo" 
+                   style="height: 45px; width: 45px;" />
+              <span style="color: #e74c3c; font-size: 12px; font-weight: bold; margin-top: 4px; text-shadow: 1px 1px 2px #000;">
+                Track. Manage. Unify.
+              </span>
+            </div>
+            <!-- Main heading -->
+            <h1 style="font-size: 24px; margin: 0;">FAMILY FINANCE TRACKER</h1>
+          </div>
+          
+          
+          
         <nav>
             {% if is_super_user %}
             <button class="super-user-button" onclick="window.location.href='/super_user_dashboard'">Super User <br>Dashboard</button>
