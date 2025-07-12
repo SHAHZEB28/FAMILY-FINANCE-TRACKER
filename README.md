@@ -5,7 +5,7 @@
 
 A comprehensive and user-friendly web application designed to help families track, manage, and unify their finances. Built with a robust Flask backend and a clean, dynamic frontend.
 
-![Family Finance Tracker Screenshot](https://i.imgur.com/gbfjYwL.jpeg)
+![Family Finance Tracker Screenshot](static/images/finance-tracker-screenshot.jpeg)
 
 ## Overview
 
